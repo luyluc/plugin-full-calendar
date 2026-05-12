@@ -21,7 +21,7 @@ import zh-cn from './locales/zh-cn.json';
  * Type-safe translation resources container
  */
 const resources: Record<string, { translation: Record<string, unknown> }> = {
-  en: { translation: en }
+  en: { translation: en },
   zh-cn: { translation: zh-cn }
 };
 
