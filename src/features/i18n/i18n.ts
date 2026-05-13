@@ -15,20 +15,20 @@ import { App, requestUrl, normalizePath } from 'obsidian';
 
 // Load English as default and fallback statically
 import en from './locales/en.json';
-import zh-cn from './locales/zh-cn.json';
+import zhcn from './locales/zh-cn.json';
 
 /**
  * Type-safe translation resources container
  */
 const resources: Record<string, { translation: Record<string, unknown> }> = {
   en: { translation: en },
-  zh-cn: { translation: zh-cn }
+  zh-cn: { translation: zhcn }
 };
 
 /**
  * Available language codes
  */
-const SUPPORTED_LANGUAGES = ['en', 'de', 'fr', 'it', 'es', 'zh'] as const;
+const SUPPORTED_LANGUAGES = ['en', 'de', 'fr', 'it', 'es', 'zh-cn'] as const;
 export type LanguageCode = (typeof SUPPORTED_LANGUAGES)[number];
 
 /**
