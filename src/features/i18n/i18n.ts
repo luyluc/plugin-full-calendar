@@ -22,7 +22,7 @@ import zhcn from './locales/zh-cn.json';
  */
 const resources: Record<string, { translation: Record<string, unknown> }> = {
   en: { translation: en },
-  zh-cn: { translation: zhcn }
+  'zh-cn': { translation: zhcn }
 };
 
 /**
